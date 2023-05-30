@@ -6,8 +6,9 @@ private:
 public:
     void set_name(string="Yme");
      void print_name();
-      void set_age(int);
+      void set_age(int=1);
       int get_age();
+    void print_all();
 };
 
 void student::set_name(string n){
@@ -26,4 +27,9 @@ void student::set_age(int n){
 int student::get_age(){
   return age;
 }
+
+void student::print_all(){
+print_name();
+    cout<<"Age: "<<age<<endl;
   
+}
